@@ -2,19 +2,20 @@
 .page {
   background-color: #f8f8f8;
   color: #333;
-  font-family: Lato, sans-serif;
+  font-family: "Lato", sans-serif;
 }
 .header {
   width: 500px;
-  margin: 0 auto;
+  margin: 0 auto 16px auto;
   display: block;
   text-align: right;
 }
 .header__img {
+  display: block;
   width: 100%;
 }
 .header__link {
-  font-family: fantasy, cursive;
+  font-family: "fantasy", cursive;
 }
 
 @media (max-width:768px) {
@@ -59,6 +60,10 @@ button{
   color: #3a3a3a;
 }
 /* Heading */
+.adding-section {
+  margin-bottom: 15px;
+}
+
 .section__title {
   color: #333;
   font-weight: 700;
@@ -122,6 +127,10 @@ button{
 }
 .task__btn-img:hover {
   transform: rotateZ(0);
+}
+.task__btn_type_edit,
+.task__btn_type_delete {
+  height: 32px;
 }
 
 /* Completed */
